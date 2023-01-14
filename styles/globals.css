@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-weight: 400;
+}
+
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url("/bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-brand {
+  color: white !important;
+  font-weight: 800;
+}
+
+.nav-item a {
+  color: white !important;
+  margin-right: 1rem;
+}
+
+.nav-item a:hover {
+  color: white;
+  border-bottom: 3px solid white;
+}
+
+.nav-item a.active {
+  color: white;
+  border-bottom: 3px solid white;
+}
+
+.nav-tabs .nav-link {
+  border: none !important;
+  color: #000 !important;
+  background-color: #f5f5f5 !important;
+}
+
+.nav-tabs .nav-item .nav-link.active {
+  border: none !important;
+  color: #fff !important;
+  background-color: #000 !important;
+}
+
+.nav-tabs .nav-item a {
+  font-size: 0.8rem;
+}
+
+.nav-tabs .nav-link:hover {
+  border: none !important;
+  color: #000 !important;
+  background-color: #fff !important;
+}
+
+.form {
+  top: -80%;
+  position: relative;
+  -webkit-box-shadow: 0 5px 0 0 rgb(0 0 0 / 10%);
+  box-shadow: 0 5px 0 0 rgb(0 0 0 / 10%);
+  border-radius: 0 15px 15px 15px;
+  z-index: 9;
+  padding: 20px;
+  background: #ffffff;
+}
+
+#box {
+  width: 75%;
+  height: auto;
+  top: -75%;
+  margin-left: 0px;
+  position: relative;
+  -webkit-box-shadow: 0 15px 30px 0 rgb(0 0 0 / 30%);
+  box-shadow: 0 15px 30px 0 rgb(0 0 0 / 30%);
+  border-radius: 15px 15px 0 0;
+  z-index: 9;
+  padding: 20px 0 20px 0;
+  background: white;
+}
+
+@media only screen and (max-width: 600px) {
+  #box {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .carousel-inner .carousel-item > div {
+    display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+
+  .carousel-inner .carousel-item-start.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+  transform: translateX(0);
+}
+
+.carousel-control-next-icon{
+  background-size: 60% 60% !important;
+  border: 3px solid white;
+  border-radius: 50%;
+  background-color: #000 !important;
+  margin-left: 3.5rem;
+}
+
+.carousel-control-prev-icon{
+  background-size: 60% 60% !important;
+  border: 3px solid white;
+  border-radius: 50%;
+  background-color: #000 !important;
+  margin-right: 4rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .carousel-control-next-icon {
+    margin-left: -8rem;
+  }
+  .carousel-control-prev-icon {
+    margin-right: 1.5rem;
+  }
+  #recipeCarousel {
+    margin-left: 5rem;
+  }
+}
+
+.star-active {
+  color: #FBC02D;
+  margin-top: 10px;
+  margin-bottom: 10px
+}
+
+.star-active:hover {
+  color: #F9A825;
+  cursor: pointer
+}
+
+.star-inactive {
+  color: #CFD8DC;
+  margin-top: 10px;
+  margin-bottom: 10px
+}
+
+#img2 {
+  border-radius: 200px;
+  margin-top: 12rem;
+  margin-left: 8rem;
+  border: 10px solid #fff;
+}
+
+.page-link {
+  border: 1px solid black !important;
+  color: #000 !important;
+}
+
+.page-link.active {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.page-link:hover {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.nav-pills .nav-link {
+  border: 1px solid black !important;
+  color: #000 !important;
+  background-color: #fff !important;
+  margin: 1rem;
+}
+
+.nav-pills .nav-item a.active {
+  color: #fff !important;
+  background-color: #000 !important;
+}
+
+.nav-pills .nav-item a:hover {
+  color: #fff !important;
+  background-color: #000 !important;
+}
+
+.nav-pills .nav-item a {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.carousel-indicators button {
+  background-color: #000 !important;
+  border-radius: 50% !important;
+  width: 12px !important;
+  height: 12px !important;
+}
+
+.carousel-inner .carousel-item {
+  height: 500px !important;
+}
+
+.fa.fa-star.checked {
+  color: #FFC700 !important;
+}
+
+.fa.fa-star-half-full {
+  color: #FFC700 !important;
+}
